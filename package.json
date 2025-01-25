@@ -1,0 +1,36 @@
+{
+  "name": "recipedata",
+  "version": "1.0.0",
+  "description": "generate recipes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node --env-file=.env --max-old-space-size=4096 index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kashline/recipedata.git"
+  },
+  "author": "kashline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kashline/recipedata/issues"
+  },
+  "homepage": "https://github.com/kashline/recipedata#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.726.0",
+    "@types/lodash": "^4.17.13",
+    "axios": "^1.7.9",
+    "lodash": "^4.17.21",
+    "openai": "^4.76.0",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5",
+    "typescript": "^5.7.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10"
+  }
+}
